@@ -1,0 +1,6 @@
+numpy
+pandas
+pyspark
+requests
+pyarrow
+ipykernel
