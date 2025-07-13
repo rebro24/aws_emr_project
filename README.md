@@ -10,6 +10,10 @@ I created an EMR cluster with Spark installed as well as JupyterHub. I tried for
 
 I streamed the RedFin dataset from their S3 bucket into my own S3 bucket. I had to SSH into the primary node and run a bash command to do so since I can't execute bash commands in Jupyter Notebook.
 
+```console
+wget -O - https://redfin-public-data.s3.us-west-2.amazonaws.com/redfin_market_tracker/city_market_tracker.tsv000.gz | aws s3 cp - s3://bucket/input/city_market_tracker.tsv000.gz
+```
+
 # Forward Looking
 
 A few things that I would like to do when I get the chance:
